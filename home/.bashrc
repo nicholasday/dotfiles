@@ -11,7 +11,7 @@ fi
 
 # Add base16-monokai as the color scheme
 # Commented out because it doesn't work with emacs
-source ~/base16-monokai.dark.sh
+source ~/.config/colors/base16-monokai.dark.sh
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red

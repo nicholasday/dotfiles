@@ -54,3 +54,5 @@ PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w \[$bldblu\]]\$ \[$txtrst\]"
 alias p='sudo pacman'
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+homeshick --quiet refresh

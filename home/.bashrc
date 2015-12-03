@@ -9,6 +9,9 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     startx
 fi
 
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
 # Add base16-monokai as the color scheme
 # Commented out because it doesn't work with emacs
 source ~/.config/colors/base16-monokai.dark.sh

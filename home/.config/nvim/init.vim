@@ -7,6 +7,7 @@ function! BuildComposer(info)
   endif
 endfunction
 
+Plug 'Shougo/deoplete.nvim', { 'do': 'DeopleteUpdate' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
@@ -76,3 +77,4 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 let g:markdown_composer_browser = "firefox"
+let g:deoplete#enable_at_startup = 1

@@ -7,7 +7,7 @@ function! BuildComposer(info)
   endif
 endfunction
 
-Plug 'Shougo/deoplete.nvim', { 'do': 'DeopleteUpdate' }
+Plug 'Shougo/deoplete.nvim', { 'do': 'UpdateRemotePlugins' }
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'

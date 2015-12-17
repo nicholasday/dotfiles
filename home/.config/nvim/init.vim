@@ -37,6 +37,11 @@ set number
 " Remap jk to esc
 imap jk <Esc>
 
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
 " Buffers navigation and management
 nnoremap <silent> + :bn<CR>
 nnoremap <silent> _ :bp<CR>
@@ -49,7 +54,7 @@ nmap <leader>gl :Glog<cr>
 nmap <leader>gd :Gdiff<cr>
 
 " Run neomake on write
-autocmd! BufWritePost * Neomake
+" autocmd! BufWritePost * Neomake
 
 " Set terminal escape to esc
 tnoremap <Esc> <C-\><C-n>

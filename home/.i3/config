@@ -8,8 +8,7 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-new_window none
-hide_edge_borders both
+new_window pixel
 
 set $mod Mod4
 

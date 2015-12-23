@@ -71,6 +71,7 @@ nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>u :Unite file buffer<CR>
 
 nmap <leader>e :e 
+nmap <leader>d :bd<CR> 
 
 " How can I close vim if the only window left open is a NERDTree?
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

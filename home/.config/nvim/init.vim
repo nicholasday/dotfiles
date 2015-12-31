@@ -37,6 +37,18 @@ set number
 " Remap jk to esc
 imap jk <Esc>
 
+" Set soft wrap at 80
+set tw=80
+set wrap
+set linebreak
+set nolist
+
+" Set stuff to work on soft wrapped lines
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj
+noremap  <buffer> <silent> 0 g0
+noremap  <buffer> <silent> $ g$
+
 set tabstop=4
 set expandtab
 set shiftwidth=4

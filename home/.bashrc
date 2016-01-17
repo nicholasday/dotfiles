@@ -11,6 +11,7 @@ fi
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export XDG_MUSIC_DIR="~/music/"
 
 # Add base16-monokai as the color scheme
 # Commented out because it doesn't work with emacs

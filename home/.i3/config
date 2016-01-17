@@ -155,3 +155,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioMicMute exec amixer set Master toggle

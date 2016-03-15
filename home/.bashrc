@@ -61,4 +61,4 @@ alias p='sudo pacman'
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
-homeshick check
+homeshick --quiet refresh

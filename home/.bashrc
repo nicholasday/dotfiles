@@ -53,6 +53,7 @@ txtrst='\e[0m'    # Text Reset
 
 alias ls='ls --color=auto'
 alias juice='mpc ls Files | grep Juicy | mpc add; mpc repeat on; mpc play'
+alias random='mpc ls Files | mpc add; mpc random on; mpc play; mpc repeat on'
 
 PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w \[$bldblu\]]\$ \[$txtrst\]"
 

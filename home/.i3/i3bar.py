@@ -45,15 +45,17 @@ def get_weeks():
     birth = datetime.date(1999, 11, 10)
     future = datetime.date(2079, 11, 10)
     current = today - birth
-    weeks = int(current.days/7)
     total_future = future - birth
-    future_weeks = int(total_future.days/7)
-    weeks_left = future_weeks - weeks
-    return str(weeks_left) + ' weeks'
+    days_left = total_future.days - current.days
+    return str(days_left) + ' days'
 
 def get_hours():
     now = datetime.datetime.now()
-    return str((24 - int(now.strftime('%-H')))) + " hours"
+    minutes = int(now.strftime('%-M'))/60
+    hours = int(now.strftime("%-H"))
+    time = hours + minutes
+    remaining = 24 - time
+    return str(round(remaining,1)) + " hours"
 
 def print_line(message):
     """ Non-buffered printing to stdout. """

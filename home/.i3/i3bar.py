@@ -40,6 +40,21 @@ def get_days():
     delta = b - a
     return str(delta.days) + " days until AP Exams"
 
+def get_weeks():
+    today = datetime.date.today()
+    birth = datetime.date(1999, 11, 10)
+    future = datetime.date(2079, 11, 10)
+    current = today - birth
+    weeks = int(current.days/7)
+    total_future = future - birth
+    future_weeks = int(total_future.days/7)
+    weeks_left = future_weeks - weeks
+    return str(weeks_left) + ' weeks'
+
+def get_hours():
+    now = datetime.datetime.now()
+    return str((24 - int(now.strftime('%-H')))) + " hours"
+
 def print_line(message):
     """ Non-buffered printing to stdout. """
     sys.stdout.write(message + '\n')
@@ -75,5 +90,7 @@ if __name__ == '__main__':
         # insert information into the start of the json, but could be anywhere
         # CHANGE THIS LINE TO INSERT SOMETHING ELSE
         j.insert(0, {'full_text' : '%s' % get_days(), 'name' : 'apdate', 'color': '#FFDC00'})
+        j.insert(0, {'full_text' : '%s' % get_weeks(), 'name' : 'weeks', 'color': '#F012BE'})
+        j.insert(0, {'full_text' : '%s' % get_hours(), 'name' : 'hours', 'color': '#FF4136'})
         # and echo back new encoded json
         print_line(prefix+json.dumps(j))

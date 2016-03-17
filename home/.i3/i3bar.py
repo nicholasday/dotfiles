@@ -38,7 +38,7 @@ def get_days():
     a = datetime.date.today()
     b = datetime.date(2016, 5, 2)
     delta = b - a
-    return str(delta.days) + " days until AP Exams"
+    return str(delta.days) + " days"
 
 def get_weeks():
     today = datetime.date.today()
@@ -92,7 +92,7 @@ if __name__ == '__main__':
         # insert information into the start of the json, but could be anywhere
         # CHANGE THIS LINE TO INSERT SOMETHING ELSE
         j.insert(0, {'full_text' : '%s' % get_days(), 'name' : 'apdate', 'color': '#FFDC00'})
-        j.insert(0, {'full_text' : '%s' % get_weeks(), 'name' : 'weeks', 'color': '#F012BE'})
+        #j.insert(0, {'full_text' : '%s' % get_weeks(), 'name' : 'weeks', 'color': '#F012BE'})
         j.insert(0, {'full_text' : '%s' % get_hours(), 'name' : 'hours', 'color': '#FF4136'})
         # and echo back new encoded json
         print_line(prefix+json.dumps(j))

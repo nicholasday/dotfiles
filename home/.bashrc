@@ -55,6 +55,13 @@ alias ls='ls --color=auto'
 alias juice='mpc ls Files | grep Juicy | mpc add; mpc repeat on; mpc play'
 alias random='mpc ls Files | mpc add; mpc random on; mpc play; mpc repeat on'
 
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gco='git checkout'
+alias gp='git push'
+alias gr='git rebase'
+
 PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w \[$bldblu\]]\$ \[$txtrst\]"
 
 alias p='sudo pacman'

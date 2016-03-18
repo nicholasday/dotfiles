@@ -9,13 +9,13 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     startx
 fi
 
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-monokai.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export XDG_MUSIC_DIR="~/music/"
-
-# Add base16-monokai as the color scheme
-# Commented out because it doesn't work with emacs
-source ~/.config/colors/base16-monokai.dark.sh
 
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red

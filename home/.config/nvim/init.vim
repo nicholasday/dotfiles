@@ -1,14 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
-    !cargo build --release
-    UpdateRemotePlugins
-  endif
-endfunction
-
-Plug 'Shougo/deoplete.nvim', { 'do': 'UpdateRemotePlugins' }
-Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+Plug 'Shougo/deoplete.nvim'
 Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
@@ -94,5 +86,4 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:markdown_composer_browser = "firefox"
 let g:deoplete#enable_at_startup = 1

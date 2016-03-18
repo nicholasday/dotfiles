@@ -56,6 +56,7 @@ alias juice='mpc ls Files | grep Juicy | mpc add; mpc repeat on; mpc play'
 alias random='mpc ls Files | mpc add; mpc random on; mpc play; mpc repeat on'
 
 alias gs='git status'
+alias gst='git stash'
 alias ga='git add'
 alias gc='git commit'
 alias gco='git checkout'

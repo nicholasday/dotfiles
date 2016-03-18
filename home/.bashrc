@@ -62,6 +62,8 @@ alias gco='git checkout'
 alias gp='git push'
 alias gr='git rebase'
 
+alias hs='homeshick'
+
 PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w \[$bldblu\]]\$ \[$txtrst\]"
 
 alias p='sudo pacman'

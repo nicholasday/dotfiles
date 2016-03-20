@@ -58,6 +58,7 @@ alias random='mpc ls Files | mpc add; mpc random on; mpc play; mpc repeat on'
 alias gs='git status'
 alias gst='git stash'
 alias ga='git add'
+alias gd='git diff'
 alias gc='git commit'
 alias gco='git checkout'
 alias gp='git push'
@@ -70,5 +71,7 @@ PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w \[$bldblu\]]\$ \[$txtrst\]"
 alias p='sudo pacman'
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+PATH=$PATH:~/src/bin
 
 homeshick --quiet refresh

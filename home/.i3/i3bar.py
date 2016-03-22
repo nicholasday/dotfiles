@@ -38,7 +38,7 @@ def get_days():
     a = datetime.date.today()
     b = datetime.date(2016, 5, 2)
     delta = b - a
-    return str(delta.days) + " days"
+    return str(delta.days - 1) + " days"
 
 def get_weeks():
     today = datetime.date.today()

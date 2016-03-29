@@ -40,6 +40,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run
 bindsym $mod+t exec "~/src/bin/nmenu.py vim ~/src/Docs/"
 bindsym $mod+y exec "~/src/bin/nmenu.py execute ~/src/bin/"
+bindsym $mod+u exec rofi -show window
 bindsym $mod+Shift+d focus parent, focus parent, focus parent, focus parent, kill
 bindsym $mod+n exec "firefox"
 
@@ -128,8 +129,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-bindsym $mod+u exec "firefox"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

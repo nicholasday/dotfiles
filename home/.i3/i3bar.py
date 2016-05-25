@@ -91,7 +91,6 @@ if __name__ == '__main__':
         j = json.loads(line)
         # insert information into the start of the json, but could be anywhere
         # CHANGE THIS LINE TO INSERT SOMETHING ELSE
-        j.insert(0, {'full_text' : '%s' % get_days(), 'name' : 'apdate', 'color': '#FFDC00'})
         #j.insert(0, {'full_text' : '%s' % get_weeks(), 'name' : 'weeks', 'color': '#F012BE'})
         j.insert(0, {'full_text' : '%s' % get_hours(), 'name' : 'hours', 'color': '#FF4136'})
         # and echo back new encoded json

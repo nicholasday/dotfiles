@@ -72,6 +72,9 @@ alias p='sudo pacman'
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
+# For rustup
+export PATH="$HOME/.cargo/bin:$PATH"
+
 PATH=$PATH:~/src/bin
 
 homeshick --quiet refresh

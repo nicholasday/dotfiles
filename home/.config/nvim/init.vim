@@ -11,11 +11,16 @@ Plug 'Shougo/unite.vim'
 
 call plug#end()
 
+set clipboard+=unnamedplus
+
 " Base16 color scheme
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 set cursorline
 colorscheme base16-monokai
+
+" Unite fuzzy matching
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
 
 " Allow hidden buffers
 set hidden
@@ -72,7 +77,7 @@ endif
 
 nmap <leader>n :NERDTreeToggle<CR>
 
-nmap <leader>u :Unite file buffer<CR>
+nmap <leader>u :Unite file buffer -start-insert<CR>
 
 nmap <leader>e :e 
 nmap <leader>d :bd<CR> 

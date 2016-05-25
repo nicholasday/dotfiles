@@ -3,7 +3,7 @@ xrdb -merge ~/.Xresources
 xrdb -merge ~/.Xresources-rofi
 xmodmap -e "keycode 135 = Super_L NoSymbol Super_L"
 redshift -l 36.08:-79.8194 -m randr -v &
-wicd-gtk --tray &
+nm-applet &
 udiskie &
 urxvt &
 firefox &

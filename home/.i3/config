@@ -165,7 +165,7 @@ bindsym XF86AudioPrev exec mpc prev
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioMicMute exec amixer set Master toggle
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp exec light -A 5
-bindsym XF86AudioLowerVolume exec amixer sset Master 10%- -M
-bindsym XF86AudioRaiseVolume exec amixer sset Master 10%+ -M
+bindsym XF86MonBrightnessDown exec light -U 2.5
+bindsym XF86MonBrightnessUp exec light -A 2.5
+bindsym XF86AudioLowerVolume exec amixer -M set Master 1%-
+bindsym XF86AudioRaiseVolume exec amixer -M set Master 1%+

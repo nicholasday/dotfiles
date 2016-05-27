@@ -73,8 +73,10 @@ alias p='sudo pacman'
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
 # For rustup
-export PATH="$HOME/.cargo/bin:$PATH"
+
 
 PATH=$PATH:~/src/bin
+PATH=$PATH:~/.gem/ruby/2.3.0/bin
 
+export PATH="$HOME/.cargo/bin:$PATH"
 homeshick --quiet refresh

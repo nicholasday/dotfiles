@@ -56,27 +56,64 @@ alias juice='mpc ls Files | grep Juicy | mpc add; mpc repeat on; mpc play'
 alias random='mpc ls Files | mpc add; mpc random on; mpc play; mpc repeat on'
 
 alias gs='git status'
-alias gst='git stash'
-alias ga='git add'
-alias gd='git diff'
 alias gc='git commit'
+alias ga='git add'
+alias gst='git stash'
+alias gdi='git diff'
 alias gco='git checkout'
-alias gp='git push'
-alias gr='git rebase'
+alias gpu='git push'
+alias gpl='git push'
+alias grb='git rebase'
+alias grm='git rm'
 
-alias hs='homeshick'
+function git_color {
+  local git_status="$(git status 2> /dev/null)"
 
-PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w \[$bldblu\]]\$ \[$txtrst\]"
+  if [[ $git_status =~ "Changes not staged" ]]; then
+    echo -e $txtred
+  elif [[ $git_status =~ "nothing added to commit but untracked files" ]]; then
+    echo -e $txtwht
+  elif [[ $git_status =~ "Your branch is ahead of" ]]; then
+    echo -e $txtylw
+  elif [[ $git_status =~ "nothing to commit" ]]; then
+    echo -e $txtcyn
+  fi
+}
+
+function git_branch {
+  local git_status="$(git status 2> /dev/null)"
+  local on_branch="On branch ([^${IFS}]*)"
+  local on_commit="HEAD detached at ([^${IFS}]*)"
+
+  if [[ $git_status =~ $on_branch ]]; then
+    local branch=${BASH_REMATCH[1]}
+    echo "($branch)"
+  elif [[ $git_status =~ $on_commit ]]; then
+    local commit=${BASH_REMATCH[1]}
+    echo "($commit)"
+  fi
+}
+
+
+PS1="\[$bldblu\][\[$txtgrn\]\u \[$txtpur\]\w "
+PS1+="\[\$(git_color)\]"            # colors git status
+PS1+="\$(git_branch)"               # prints current branch
+PS1+="\[$bldblu\]]\$ \[$txtrst\]"    
+
+export PS1
 
 alias p='sudo pacman'
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
-# For rustup
-
+alias hs='homeshick'
 
 PATH=$PATH:~/src/bin
 PATH=$PATH:~/.gem/ruby/2.3.0/bin
 
 export PATH="$HOME/.cargo/bin:$PATH"
 homeshick --quiet refresh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+set -o vi

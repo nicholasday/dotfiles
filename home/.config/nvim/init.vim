@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'Shougo/deoplete.nvim'
+Plug 'rust-lang/rust.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
@@ -8,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'benekastah/neomake'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/unite.vim'
+Plug 'lervag/vimtex'
 
 call plug#end()
 
@@ -78,6 +80,7 @@ endif
 nmap <leader>n :NERDTreeToggle<CR>
 
 nmap <leader>u :Unite file buffer -start-insert<CR>
+nmap <leader>b :Unite buffer -start-insert<CR>
 
 nmap <leader>e :e 
 nmap <leader>d :bd<CR> 

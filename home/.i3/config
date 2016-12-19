@@ -77,7 +77,7 @@ client.background       #ffffff
 #
 #client.background       #ffffff
 
-hide_edge_borders vertical
+hide_edge_borders both
 
 bar {
     font pango:Bitstream Vera Sans Mono Roman 11

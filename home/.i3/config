@@ -80,7 +80,7 @@ client.background       #ffffff
 hide_edge_borders both
 
 bar {
-    font pango:Bitstream Vera Sans Mono Roman 11
+    font pango:Bitstream Vera Sans Mono Roman 12
     status_command i3status | ~/.i3/i3bar.py
     colors {
         background #263238

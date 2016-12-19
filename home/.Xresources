@@ -1,2 +1,13 @@
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
 URxvt.scrollBar: false
-URxvt.font: -*-terminus-*-*-*-*-21-*-*-*-*-*-*-*
+
+!URxvt.font: -*-terminus-*-*-*-*-21-*-*-*-*-*-*-*
+!URxvt*font:     xft:Terminus:bold:size=15
+URxvt*font: xft:Bitstream Vera Sans Mono:style=Roman:size=11
+URxvt.letterSpace: -2

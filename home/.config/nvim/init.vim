@@ -1,28 +1,32 @@
-call plug#begin('~/.vim/plugged')
+if &compatible
+  set nocompatible
+endif
+set runtimepath+=~/.vim/repos/github.com/Shougo/dein.vim
 
-Plug 'Shougo/deoplete.nvim'
-Plug 'rust-lang/rust.vim'
-Plug 'chriskempson/base16-vim'
-Plug 'itchyny/lightline.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'benekastah/neomake'
-Plug 'scrooloose/nerdtree'
-Plug 'Shougo/unite.vim'
-Plug 'lervag/vimtex'
+call dein#begin('~/.vim')
 
-call plug#end()
+call dein#add('Shougo/deoplete.nvim')
+call dein#add('chriskempson/base16-vim')
+
+call dein#end()
+
+filetype plugin indent on
+syntax enable
+
+if dein#check_install()
+    call dein#install()
+end
 
 set clipboard+=unnamedplus
 
 " Base16 color scheme
-let base16colorspace=256  " Access colors present in 256 colorspace
-set background=dark
-set cursorline
-colorscheme base16-monokai
+" Uses the colorscheme set by the shell with base16
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
-" Unite fuzzy matching
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
+set cursorline
 
 " Allow hidden buffers
 set hidden
@@ -64,12 +68,6 @@ nmap <leader>ga :Gwrite<cr>
 nmap <leader>gl :Glog<cr>
 nmap <leader>gd :Gdiff<cr>
 
-" Run neomake on write
-" autocmd! BufWritePost * Neomake
-
-" Set terminal escape to esc
-tnoremap <Esc> <C-\><C-n>
-
 if !&scrolloff
   set scrolloff=3       " Show next 3 lines while scrolling.
 endif
@@ -77,21 +75,11 @@ if !&sidescrolloff
   set sidescrolloff=5   " Show next 5 columns while side-scrolling.
 endif
 
-nmap <leader>n :NERDTreeToggle<CR>
-
-nmap <leader>u :Unite file buffer -start-insert<CR>
-nmap <leader>b :Unite buffer -start-insert<CR>
-
 nmap <leader>e :e 
 nmap <leader>d :bd<CR> 
-
-" How can I close vim if the only window left open is a NERDTree?
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Better splits moving
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-let g:deoplete#enable_at_startup = 1

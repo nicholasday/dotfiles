@@ -1,4 +1,4 @@
-xrdb -merge ~/.config/colors/base16-monokai.dark.256.xresources
+xrdb -merge ~/.config/base16-xresources/xresources/base16-materia-256.Xresources
 xrdb -merge ~/.Xresources
 xrdb -merge ~/.Xresources-rofi
 xmodmap -e "keycode 135 = Super_L NoSymbol Super_L"

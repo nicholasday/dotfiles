@@ -1,9 +1,9 @@
 if &compatible
   set nocompatible
 endif
-set runtimepath+=~/.vim/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.config/nvim/plugins/repos/github.com/Shougo/dein.vim
 
-call dein#begin('~/.vim')
+call dein#begin('~/.config/nvim/plugins')
 
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('chriskempson/base16-vim')

@@ -7,4 +7,5 @@ nm-applet &
 udiskie &
 termite &
 firefox &
+xsetroot -solid "#263238"
 exec i3

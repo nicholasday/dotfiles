@@ -6,3 +6,6 @@ mkdir ~/.vim
 sh /tmp/installer.sh ~/.vim
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 git clone https://github.com/chriskempson/base16-xresources.git ~/.config/base16-xresources
+cargo install fmt
+cargo install racer
+rustup component add rust-src

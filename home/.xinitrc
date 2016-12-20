@@ -5,6 +5,6 @@ xmodmap -e "keycode 135 = Super_L NoSymbol Super_L"
 redshift -l 36.08:-79.8194 -m randr -v &
 nm-applet &
 udiskie &
-urxvt &
+termite &
 firefox &
 exec i3

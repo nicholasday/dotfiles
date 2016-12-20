@@ -9,3 +9,4 @@ git clone https://github.com/chriskempson/base16-xresources.git ~/.config/base16
 cargo install fmt
 cargo install racer
 rustup component add rust-src
+p -S termite

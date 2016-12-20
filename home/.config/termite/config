@@ -1,0 +1,47 @@
+[options]
+#font = Bitstream Vera Sans Mono Roman 11
+font = Dejavu Sans Mono 11
+browser = firefox
+cursor_blink = off
+mouse_autohide = true
+
+[colors]
+
+# special
+foreground      = #cdd3de
+foreground_bold = #cdd3de
+cursor          = #cdd3de
+cursor_foreground = #263238
+background      = #263238
+
+# black
+color0  = #263238
+color8  = #707880
+
+# red
+color1  = #ec5f67
+color9  = #ec5f67
+
+# green
+color2  = #8bd649
+color10 = #8bd649
+
+# yellow
+color3  = #ffcc00
+color11 = #ffcc00
+
+# blue
+color4  = #89ddff
+color12 = #89ddff
+
+# magenta
+color5  = #82aaff
+color13 = #82aaff
+
+# cyan
+color6  = #80cbc4
+color14 = #80cbc4
+
+# white
+color7  = #cdd3de
+color15 = #ffffff

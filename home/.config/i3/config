@@ -33,7 +33,7 @@ font pango:Bitstream Vera Sans Mono Roman 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+q kill
@@ -81,7 +81,7 @@ hide_edge_borders both
 
 bar {
     font pango:Bitstream Vera Sans Mono Roman 12
-    status_command i3status | ~/.i3/i3bar.py
+    status_command i3status | ~/.config/i3/i3bar.py
     colors {
         background #263238
         statusline #e8e8e8

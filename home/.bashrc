@@ -111,12 +111,6 @@ alias hs='homeshick'
 PATH=$PATH:~/src/bin
 PATH=$PATH:~/.gem/ruby/2.3.0/bin
 
-homeshick --quiet refresh
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export RUST_SRC_PATH=~/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-set -o vi

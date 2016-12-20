@@ -1,5 +1,6 @@
 #!/bin/bash
 # install infinality + add repos for arch
+git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > /tmp/installer.sh
 rm -rf ~/.vim
 mkdir ~/.vim

@@ -8,6 +8,8 @@ nmap <leader>gc :Gcommit<cr>
 nmap <leader>ga :Gwrite<cr>
 nmap <leader>gl :Glog<cr>
 nmap <leader>gd :Gdiff<cr>
+nmap <leader>gpu :Git push<cr>
+nmap <leader>gpl :Git pull<cr>
 
 
 nmap <leader>e :e 

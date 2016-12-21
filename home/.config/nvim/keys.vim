@@ -34,6 +34,7 @@ imap jk <Esc>
 nmap <leader>u :Denite buffer file_rec_new<cr>
 nmap <leader>/ :Denite grep<cr>
 nmap <leader>b :Denite buffer<cr>
+nmap <leader>o :Denite file_rec_new<cr>
 
 nmap <leader>q :q!<cr>
 nmap <leader>s :w<cr>

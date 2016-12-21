@@ -27,3 +27,20 @@ noremap  <buffer> <silent> $ g$
 
 " Remap jk to esc
 imap jk <Esc>
+
+" Opens file/buffer Denite
+nmap <leader>u :Denite buffer file_rec_new<cr>
+nmap <leader>/ :Denite grep<cr>
+nmap <leader>b :Denite buffer<cr>
+
+nmap <leader>q :q!<cr>
+nmap <leader>s :w<cr>
+nmap <leader>wq :wq<cr>
+
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><S-Tab>  pumvisible() ? "\<c-p>" : "\<c-h>"
+
+nmap <leader>t :Tagbar<cr>
+
+nmap <leader>n :NERDTreeToggle<CR>

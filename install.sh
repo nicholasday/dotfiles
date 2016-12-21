@@ -11,3 +11,5 @@ cargo install fmt
 cargo install racer
 rustup component add rust-src
 p -S termite
+p -S ripgrep
+pacaur -S universal-ctags-git

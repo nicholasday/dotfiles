@@ -10,6 +10,16 @@ call dein#add('chriskempson/base16-vim')
 call dein#add('rust-lang/rust.vim')
 call dein#add('racer-rust/vim-racer')
 call dein#add('neomake/neomake')
+call dein#add('Shougo/denite.nvim')
+call dein#add('haya14busa/dein-command.vim')
+call dein#add('lilydjwg/tagbar') " Add support for rust
+call dein#add('scrooloose/nerdtree')
+call dein#add('Xuyuanp/nerdtree-git-plugin')
+call dein#add('jeffkreeftmeijer/vim-numbertoggle')
+call dein#add('redbmk/vim-fugitive') " For following symlinks
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
+call dein#add('airblade/vim-gitgutter')
 
 call dein#end()
 
@@ -51,6 +61,7 @@ if !&sidescrolloff
   set sidescrolloff=5   " Show next 5 columns while side-scrolling.
 endif
 
-source $HOME/.config/nvim/keys.vim
-source $HOME/.config/nvim/plugins.vim
+set tags=./tags,tags,$RUST_SRC_PATH/tags;
 
+source $HOME/.config/nvim/plugins.vim
+source $HOME/.config/nvim/keys.vim

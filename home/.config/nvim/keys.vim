@@ -47,3 +47,12 @@ inoremap <expr><S-Tab>  pumvisible() ? "\<c-p>" : "\<c-h>"
 nmap <leader>t :Tagbar<cr>
 
 nmap <leader>n :NERDTreeToggle<CR>
+
+nmap <silent>]q :cnext<cr>
+nmap <silent>[q :cprev<cr>
+
+nmap <silent>]l :lnext<cr>
+nmap <silent>[l :lprev<cr>
+
+nmap <silent>]<space> o<ESC>k
+nmap <silent>[<space> O<ESC>j

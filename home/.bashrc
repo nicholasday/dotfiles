@@ -62,7 +62,7 @@ alias gst='git stash'
 alias gdi='git diff'
 alias gco='git checkout'
 alias gpu='git push'
-alias gpl='git push'
+alias gpl='git pull'
 alias grb='git rebase'
 alias grm='git rm'
 

@@ -10,7 +10,8 @@ call dein#add('chriskempson/base16-vim')
 call dein#add('rust-lang/rust.vim')
 call dein#add('racer-rust/vim-racer')
 call dein#add('neomake/neomake')
-call dein#add('Shougo/denite.nvim')
+call dein#add('nicholasday/denite.nvim') " Adds support for creating new files
+                                         " in file_rec_new
 call dein#add('haya14busa/dein-command.vim')
 call dein#add('lilydjwg/tagbar') " Add support for rust
 call dein#add('scrooloose/nerdtree')

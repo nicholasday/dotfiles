@@ -50,9 +50,13 @@ nmap <leader>n :NERDTreeToggle<CR>
 
 nmap <silent>]q :cnext<cr>
 nmap <silent>[q :cprev<cr>
+nmap <silent>]Q :cr<cr>
+nmap <silent>[Q :cla<cr>
 
 nmap <silent>]l :lnext<cr>
 nmap <silent>[l :lprev<cr>
+nmap <silent>]L :lr<cr>
+nmap <silent>[L :lla<cr>
 
 nmap <silent>]<space> o<ESC>k
 nmap <silent>[<space> O<ESC>j

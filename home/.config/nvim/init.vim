@@ -21,6 +21,7 @@ call dein#add('redbmk/vim-fugitive') " For following symlinks
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('airblade/vim-gitgutter')
+call dein#add('posva/vim-vue')
 
 call dein#end()
 

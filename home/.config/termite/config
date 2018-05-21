@@ -1,6 +1,6 @@
 [options]
-#font = Bitstream Vera Sans Mono Roman 11
-font = Dejavu Sans Mono 11
+#font = Bitstream Vera Sans Mono Roman 12px
+font = Dejavu Sans Mono 15px
 browser = firefox
 cursor_blink = off
 mouse_autohide = true

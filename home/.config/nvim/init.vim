@@ -10,8 +10,9 @@ call dein#add('chriskempson/base16-vim')
 call dein#add('rust-lang/rust.vim')
 call dein#add('racer-rust/vim-racer')
 call dein#add('neomake/neomake')
-call dein#add('nicholasday/denite.nvim') " Adds support for creating new files
-                                         " in file_rec_new
+"call dein#add('nicholasday/denite.nvim') " Adds support for creating new files
+"                                         " in file_rec_new
+call dein#add('Shougo/denite.nvim')
 call dein#add('haya14busa/dein-command.vim')
 call dein#add('lilydjwg/tagbar') " Add support for rust
 call dein#add('scrooloose/nerdtree')
@@ -21,6 +22,7 @@ call dein#add('redbmk/vim-fugitive') " For following symlinks
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('airblade/vim-gitgutter')
+call dein#add('pangloss/vim-javascript')
 call dein#add('posva/vim-vue')
 
 call dein#end()

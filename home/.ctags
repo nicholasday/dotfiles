@@ -1,4 +1,4 @@
 --recurse=yes
 --exclude=.git
 --exclude=log
---append
+--append=no

@@ -5,7 +5,8 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
-let g:rustfmt_autosave = 1 
+" Did to be better compatible with Rocket's beta features #[get()]
+let g:rustfmt_autosave = 0 
 
 let g:deoplete#enable_at_startup = 1
 

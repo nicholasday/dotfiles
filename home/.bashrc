@@ -110,7 +110,8 @@ alias hs='homeshick'
 
 PATH=$PATH:~/src/bin
 PATH=$PATH:~/.gem/ruby/2.3.0/bin
+PATH=$PATH:/opt/anaconda/bin
+PATH="$HOME/.cargo/bin:$PATH"
+export PATH=~/.npm-global/bin:$PATH
 
-export PATH="$HOME/.cargo/bin:$PATH"
-
-export RUST_SRC_PATH=~/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"

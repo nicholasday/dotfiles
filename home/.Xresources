@@ -8,13 +8,16 @@ Xft.rgba: rgb
 URxvt.scrollBar: false
 
 !URxvt.font: -*-terminus-*-*-*-*-21-*-*-*-*-*-*-*
-!URxvt*font:     xft:Terminus:bold:size=15
-URxvt*font: xft:Bitstream Vera Sans Mono:style=Roman:size=11
+URxvt*font:     xft:Terminus:bold:size=15
+!URxvt*font: xft:Bitstream Vera Sans Mono:style=Roman:size=18
 URxvt.letterSpace: -2
 
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.url-launcher: firefox
 URxvt.matcher.button: 1
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false

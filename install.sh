@@ -15,3 +15,5 @@ p -S termite
 p -S ripgrep
 pacaur -S universal-ctags-git
 # browser.fullscreen.animate == false firefox
+# browser.link.open newwindow == 1 firefox
+# browser.link.open newwindow.restriction == 0 firefox

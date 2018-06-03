@@ -1,5 +1,10 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "reason.diagnostics.tools": [
+        "merlin",
+        "bsb"
+    ],
+    "reason.codelens.enabled": true,
     "vim.enableNeovim": true,
     "vim.disableAnnoyingNeovimMessage": true,
     "extensions.ignoreRecommendations": true,

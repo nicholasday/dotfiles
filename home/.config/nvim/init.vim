@@ -24,11 +24,16 @@ call dein#add('vim-airline/vim-airline-themes')
 call dein#add('airblade/vim-gitgutter')
 call dein#add('pangloss/vim-javascript')
 call dein#add('posva/vim-vue')
+call dein#add('sirtaj/vim-openscad')
 
 call dein#end()
 
 filetype plugin indent on
 syntax enable
+
+" Needed for file watchers like parcel so that this overwrites rather than
+" renames the files
+set backupcopy=yes
 
 if dein#check_install()
     call dein#install()
